@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年度最新版】省エネルギー投資促進支援事業 補助金完全ガイド | 3benefits</title>
+  <meta name="description" content="SIIの省エネルギー投資促進支援事業を、製造業・工場・設備担当者向けに申請型、補助率、対象設備、スケジュール、準備アクションまで整理したSEO記事です。">
+  <style>
+    :root {
+      --navy: #0c3359;
+      --navy-2: #0f4f79;
+      --blue: #1086b4;
+      --green: #16a971;
+      --orange: #f08a24;
+      --yellow: #ffd166;
+      --text: #202b33;
+      --muted: #64717d;
+      --line: #dce6ed;
+      --soft: #f4f8f9;
+      --soft-blue: #eaf5f8;
+      --white: #ffffff;
+      --shadow: 0 18px 42px rgba(12, 51, 89, .12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.88;
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; }
+    #progress-bar {
+      position: fixed;
+      inset: 0 auto auto 0;
+      height: 4px;
+      width: 0;
+      background: linear-gradient(90deg, var(--green), var(--orange));
+      z-index: 1000;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid rgba(220,230,237,.86);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--navy);
+      font-weight: 800;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: linear-gradient(135deg, var(--green), var(--blue));
+      position: relative;
+      box-shadow: 0 8px 18px rgba(22,169,113,.24);
+    }
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--yellow);
+      right: 5px;
+      top: 5px;
+    }
+    .brand small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      margin-top: 3px;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .header-nav a { color: #3f4e59; }
+    .header-cta,
+    .primary-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 14px 26px rgba(240,138,36,.24);
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+    }
+    .header-cta:hover,
+    .primary-cta:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+      background: #df7b16;
+      box-shadow: 0 18px 30px rgba(240,138,36,.3);
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 80% 18%, rgba(255,209,102,.2), transparent 26%),
+        linear-gradient(135deg, #07304c 0%, #0e5f7e 55%, #0d8a7b 100%);
+      color: #fff;
+      overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      min-height: 590px;
+      padding: 54px 22px 70px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(320px, .78fr);
+      align-items: center;
+      gap: 54px;
+    }
+    .hero-inner > * { min-width: 0; }
+    .breadcrumbs {
+      margin-bottom: 28px;
+      color: rgba(255,255,255,.74);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .breadcrumbs a { color: rgba(255,255,255,.9); }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(32px, 4.1vw, 56px);
+      line-height: 1.25;
+      font-weight: 900;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .hero-lead {
+      max-width: 690px;
+      margin: 24px 0 0;
+      color: rgba(255,255,255,.86);
+      font-size: 17px;
+      line-height: 1.9;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 0;
+    }
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      color: rgba(255,255,255,.9);
+      font-size: 12px;
+      font-weight: 800;
+      min-width: 0;
+      max-width: 100%;
+      white-space: normal;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 34px;
+      flex-wrap: wrap;
+    }
+    .secondary-cta {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .secondary-cta:hover {
+      background: rgba(255,255,255,.1);
+      text-decoration: none;
+    }
+    .hero-visual {
+      position: relative;
+      min-height: 430px;
+    }
+    .visual-card {
+      position: absolute;
+      inset: 34px 0 auto auto;
+      width: min(390px, 100%);
+      border-radius: 24px;
+      background: rgba(255,255,255,.94);
+      color: var(--text);
+      box-shadow: 0 30px 80px rgba(0,0,0,.22);
+      overflow: hidden;
+    }
+    .visual-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #eaf5f8;
+    }
+    .visual-body { padding: 22px; }
+    .visual-body h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 20px;
+      line-height: 1.45;
+    }
+    .visual-body p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .metric-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .metric {
+      padding: 10px;
+      border-radius: 14px;
+      background: var(--soft-blue);
+      text-align: center;
+    }
+    .metric strong {
+      display: block;
+      color: var(--navy);
+      font-size: 17px;
+      line-height: 1.2;
+    }
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+    .floating-card {
+      position: absolute;
+      left: -36px;
+      top: 52px;
+      width: 238px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.96);
+      color: var(--navy);
+      box-shadow: 0 24px 58px rgba(0,0,0,.18);
+    }
+    .floating-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .floating-card strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 29px;
+      line-height: 1.1;
+    }
+
+    .summary-band {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    .summary-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 22px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .summary-item {
+      padding: 24px;
+      border-radius: 8px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+    }
+    .summary-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: 30px;
+      line-height: 1.1;
+    }
+    .summary-item span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .page {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 54px 22px 86px;
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr) 280px;
+      gap: 28px;
+      align-items: start;
+    }
+    .article-card {
+      background: #fff;
+      min-width: 0;
+    }
+    .article-intro {
+      padding: 28px 30px;
+      margin-bottom: 34px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: linear-gradient(180deg, #fff, #f7fbfc);
+    }
+    .article-intro p {
+      margin: 0;
+      color: #3f4e59;
+      font-size: 15px;
+    }
+    .article-section {
+      padding-top: 24px;
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+    .article-section:first-of-type {
+      border-top: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .article-section h2 {
+      margin: 0 0 24px;
+      padding-left: 18px;
+      border-left: 6px solid var(--green);
+      color: var(--navy);
+      font-size: clamp(25px, 2.5vw, 34px);
+      line-height: 1.42;
+      font-weight: 900;
+    }
+    .article-section h3 {
+      margin: 36px 0 16px;
+      color: var(--navy-2);
+      font-size: 21px;
+      line-height: 1.55;
+      font-weight: 900;
+    }
+    .article-section p {
+      margin: 0 0 20px;
+      font-size: 16px;
+      color: #2f3a42;
+    }
+    .article-section ul {
+      margin: 18px 0 26px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .article-section li {
+      position: relative;
+      padding: 11px 14px 11px 38px;
+      border-radius: 8px;
+      background: #f8fbfc;
+      border: 1px solid #e5edf2;
+      font-size: 15px;
+    }
+    .article-section li::before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 20px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .check-list li {
+      padding-left: 46px;
+      background: #fff;
+    }
+    .check-list li::before {
+      top: 14px;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      background: transparent;
+      border: 2px solid var(--green);
+    }
+    .note {
+      margin: 26px 0;
+      padding: 22px 24px;
+      border-radius: 8px;
+      background: #edf8f3;
+      border: 1px solid #cfeadd;
+      border-left: 6px solid var(--green);
+    }
+    .note.warning {
+      background: #fff8ea;
+      border-color: #ffe0a8;
+      border-left-color: var(--orange);
+    }
+    .note p {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+    .note p:last-child { margin-bottom: 0; }
+    .note-title {
+      color: var(--navy);
+      font-weight: 900;
+    }
+    .table-scroll {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 12px 24px rgba(12,51,89,.06);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 680px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    th {
+      background: #eaf5f8;
+      color: var(--navy);
+      text-align: left;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: 0; }
+    tbody tr:nth-child(even) td { background: #fbfdfe; }
+
+    .toc-rail,
+    .cta-rail {
+      position: sticky;
+      top: 86px;
+      display: grid;
+      gap: 18px;
+    }
+    .toc-rail { align-self: start; }
+    .cta-rail { align-self: start; }
+    .side-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 12px 28px rgba(12,51,89,.06);
+      overflow: hidden;
+    }
+    .side-card h2 {
+      margin: 0;
+      padding: 18px 20px;
+      color: var(--navy);
+      background: #f7fbfc;
+      border-bottom: 1px solid var(--line);
+      font-size: 15px;
+      line-height: 1.45;
+    }
+    .toc {
+      max-height: calc(100vh - 158px);
+      overflow: auto;
+      padding: 10px;
+    }
+    .toc a {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 11px 10px;
+      border-radius: 8px;
+      color: #33434f;
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+    .toc a:hover {
+      background: #edf8f3;
+      text-decoration: none;
+      color: var(--navy);
+    }
+    .toc span {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .consult-card {
+      padding: 22px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(255,209,102,.34), transparent 27%),
+        linear-gradient(145deg, var(--navy), var(--navy-2));
+    }
+    .consult-card h2 {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: #fff;
+      font-size: 19px;
+      line-height: 1.45;
+    }
+    .consult-card p {
+      margin: 12px 0 18px;
+      color: rgba(255,255,255,.8);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    .consult-card a {
+      width: 100%;
+      color: #fff;
+    }
+    .cta-support {
+      margin: 16px 0 0;
+      padding: 14px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.85);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+    .related-list {
+      padding: 8px 18px 18px;
+      display: grid;
+      gap: 12px;
+    }
+    .related-list a {
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.55;
+      font-weight: 800;
+    }
+    .related-list a:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .inline-cta {
+      margin: 44px 0;
+      padding: 28px;
+      border-radius: 12px;
+      background:
+        linear-gradient(135deg, rgba(22,169,113,.12), rgba(16,134,180,.12)),
+        #fff;
+      border: 1px solid #cfeadd;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 24px;
+    }
+    .inline-cta h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 22px;
+      line-height: 1.45;
+    }
+    .inline-cta p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .footer {
+      background: #082942;
+      color: rgba(255,255,255,.78);
+    }
+    .footer-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 22px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+    .footer strong { color: #fff; }
+
+    @media (max-width: 1160px) {
+      .header-nav a:not(.header-cta) { display: none; }
+      .page {
+        grid-template-columns: 1fr;
+      }
+      .toc-rail,
+      .cta-rail {
+        position: static;
+      }
+      .toc-rail { order: -2; }
+      .cta-rail { order: -1; }
+      .toc {
+        max-height: 320px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-bottom: 50px;
+      }
+      .hero-visual {
+        min-height: 390px;
+        max-width: 520px;
+      }
+      .summary-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .header-inner { padding: 11px 16px; }
+      .brand small, .header-nav { display: none; }
+      .hero-inner {
+        padding: 34px 16px 42px;
+        gap: 26px;
+        max-width: 100vw;
+        overflow: hidden;
+      }
+      .hero-inner, .hero-visual, .visual-card { width: 100%; min-width: 0; }
+      .hero-inner > div,
+      .hero h1,
+      .hero-lead,
+      .hero-meta,
+      .hero-actions,
+      .visual-body {
+        width: 100%;
+        max-width: calc(100vw - 32px);
+      }
+      .breadcrumbs { font-size: 12px; margin-bottom: 18px; }
+      .hero h1 {
+        font-size: 27px;
+        line-height: 1.34;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+      }
+      .hero-lead {
+        font-size: 15px;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+      }
+      .hero-meta {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .meta-pill { width: 100%; }
+      .hero-actions { align-items: stretch; }
+      .primary-cta, .secondary-cta { width: 100%; }
+      .visual-card, .floating-card {
+        position: relative;
+        inset: auto;
+        width: 100%;
+      }
+      .visual-body h2 {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+      }
+      .hero-visual {
+        display: grid;
+        gap: 14px;
+        min-height: auto;
+      }
+      .summary-inner, .page { padding-left: 16px; padding-right: 16px; }
+      .article-intro, .inline-cta { padding: 20px; }
+      .article-section h2 { font-size: 25px; }
+      .article-section p, .article-section li { font-size: 15px; }
+      .inline-cta { grid-template-columns: 1fr; }
+      .inline-cta .primary-cta { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://www.3benefits.jp/" target="_blank" rel="noopener" aria-label="スリーベネフィッツ">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>3benefits<small>省エネ設備のトータルコンサルティング</small></span>
+      </a>
+      <nav class="header-nav" aria-label="主要ナビゲーション">
+        <a href="https://www.3benefits.jp/service/" target="_blank" rel="noopener">省エネ・コスト削減</a>
+        <a href="https://www.3benefits.jp/subsidy/" target="_blank" rel="noopener">補助金申請サポート</a>
+        <a href="https://www.3benefits.jp/blog/" target="_blank" rel="noopener">ナレッジ</a>
+        <a class="header-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">無料相談</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="breadcrumbs"><a href="https://www.3benefits.jp/" target="_blank" rel="noopener">TOP</a> / ナレッジ / 省エネ補助金</div>
+          <h1>【2026年度最新版】省エネルギー投資促進支援事業 補助金完全ガイド</h1>
+          <p class="hero-lead">製造業・工場の設備投資で使えるSII省エネ補助金について、申請型の選び方、補助率、対象設備、スケジュール、申請前の準備を実務目線で整理します。</p>
+          <div class="hero-meta">
+            <span class="meta-pill">公開日 2026年5月</span>
+            <span class="meta-pill">最終更新 2026年5月21日（v4修正反映）</span>
+            <span class="meta-pill">対象 製造業・工場・大企業・中小企業・設備担当者・経営企画</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">自社が対象か無料相談</a>
+            <a class="secondary-cta" href="#申請前チェックリスト">チェックリストを見る</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="省エネ設備投資のイメージ">
+          <div class="visual-card">
+            <img src="lightning-images/baselight-2.png" alt="LED照明設備のイメージ">
+            <div class="visual-body">
+              <h2>設備更新の前に、申請型と補助対象経費を確認</h2>
+              <p>交付決定前の発注・契約は対象外になる可能性があります。見積取得と社内決裁は早めの逆算が必要です。</p>
+              <div class="metric-strip">
+                <div class="metric"><strong>85.8%</strong><span>令和6年度補正2次公募の設備単位型採択率</span></div><div class="metric"><strong>1億円</strong><span>Ⅲ型設備単位型の補助上限額</span></div><div class="metric"><strong>4者以上</strong><span>SC連携枠で必要となる共同実施体制</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card">
+            <span>申請前の要点</span>
+            <strong>型・設備・時期</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-band" aria-label="記事の要点">
+      <div class="summary-inner">
+        <div class="summary-item"><strong>85.8%</strong><span>令和6年度補正2次公募の設備単位型採択率</span></div>
+<div class="summary-item"><strong>1億円</strong><span>Ⅲ型設備単位型の補助上限額</span></div>
+<div class="summary-item"><strong>4者以上</strong><span>SC連携枠で必要となる共同実施体制</span></div>
+      </div>
+    </section>
+
+    <div class="page">
+      <aside class="toc-rail" aria-label="記事目次">
+        <section class="side-card">
+          <h2>この記事でわかること</h2>
+          <nav class="toc">
+            <a href="#はじめに省エネ投資はコスト削減と脱炭素対応を同時に進める経営施策"><span>01</span>はじめに：省エネ投資は「コスト削減」と「脱炭素対応」を同時に進める経営施策</a>
+<a href="#ポイント1採択率85超の実績はあるただし必ず採択ではない"><span>02</span>ポイント1：採択率85%超の実績はある。ただし「必ず採択」ではない</a>
+<a href="#ポイント2まずは申請型を仮決めするⅲ型だけでなくⅰⅱgxsc連携も検討対象"><span>03</span>ポイント2：まずは申請型を仮決めする。Ⅲ型だけでなくⅠ・Ⅱ・GX・SC連携も検討対象</a>
+<a href="#ポイント3ⅲ型設備単位型は設備費のみ補助率13以内上限1億円が基本"><span>04</span>ポイント3：Ⅲ型設備単位型は「設備費のみ・補助率1/3以内・上限1億円」が基本</a>
+<a href="#ポイント4gx設備単位型ⅱ型は更新だけでなく新設燃料転換も検討対象になる"><span>05</span>ポイント4：GX設備単位型・Ⅱ型は、更新だけでなく新設・燃料転換も検討対象になる</a>
+<a href="#ポイント5sc連携枠はサプライチェーン上の4者以上で取り組む大型枠"><span>06</span>ポイント5：SC連携枠は、サプライチェーン上の4者以上で取り組む大型枠</a>
+<a href="#対象設備空調ボイラ変圧器だけでなく生産設備も対象になる"><span>07</span>対象設備：空調・ボイラ・変圧器だけでなく、生産設備も対象になる</a>
+<a href="#2026年度実施分のスケジュール状況"><span>08</span>2026年度実施分のスケジュール状況</a>
+<a href="#申請前チェックリスト"><span>09</span>申請前チェックリスト</a>
+<a href="#スリーベネフィッツのサポート実績"><span>10</span>スリーベネフィッツのサポート実績</a>
+<a href="#まとめ今すぐ行うべき確認アクション"><span>11</span>まとめ：今すぐ行うべき確認アクション</a>
+<a href="#参考資料公式情報"><span>12</span>参考資料・公式情報</a>
+<a href="#免責事項"><span>13</span>免責事項</a>
+          </nav>
+        </section>
+      </aside>
+
+      <article class="article-card">
+        <div class="article-intro">
+          <p>本記事は、SII公式資料に基づき、スリーベネフィッツ株式会社が補助金活用を検討する企業担当者向けに作成した実務ガイドです。補助率・要件・スケジュールは変更される場合があるため、申請前には必ず最新の公募要領をご確認ください。</p>
+        </div>
+        <aside class="note"><p class="note-title">本記事について</p><p>本記事は2026年5月24日時点の情報に基づきます。</p></aside>
+<p>2026年度実施分（令和7年度補正予算事業）の1次公募は2026年4月27日17時に終了しています。2次公募・次年度以降の準備にご活用ください。 補助率・要件・スケジュール等は、必ず<a href="https://sii.or.jp/" target="_blank" rel="noopener">SII(一般社団法人 環境共創イニシアチブ)公式サイト</a>の最新公募要領でご確認ください。</p>
+<section class="article-section" id="はじめに省エネ投資はコスト削減と脱炭素対応を同時に進める経営施策"><h2>はじめに：省エネ投資は「コスト削減」と「脱炭素対応」を同時に進める経営施策</h2>
+<p>電気代・ガス料金の上昇、老朽化設備の更新、取引先からのCO2排出量削減要請、Scope 3対応などにより、製造業・工場にとって省エネ投資は「余裕があれば行う改善活動」ではなく、収益性・取引継続・設備競争力に関わる経営テーマになっています。</p>
+<p>一方で、高効率空調、ボイラ、変圧器、コンプレッサ、工作機械、生産設備などの更新にはまとまった投資が必要です。そこで検討したいのが、SII（一般社団法人 環境共創イニシアチブ）が執行する国の省エネ系補助金です。</p>
+<p>2026年度実施分では、令和7年度補正予算に基づき、以下のような複数の枠が設定されています。</p>
+<ul><li>工場・事業場型</li><li>電化・脱炭素燃料転換型</li><li>設備単位型</li><li>GX設備単位型</li><li>エネルギー需要最適化型</li><li>サプライチェーン連携枠</li></ul>
+<p>本記事では、BtoB事業者、とくに製造業・工場・設備担当者・経営企画担当者が、自社がどの枠を検討すべきか、今から何を準備すべきかを判断できるよう、5つのポイントに整理します。</p>
+</section>
+<section class="article-section" id="ポイント1採択率85超の実績はあるただし必ず採択ではない"><h2>ポイント1：採択率85%超の実績はある。ただし「必ず採択」ではない</h2>
+<p>このポイントの要点： 令和6年度補正予算事業の2次公募では設備単位型の採択率が85.8%でした。ただし、公募回によって採択率は大きく変わります。</p>
+<p>「補助金は競争率が高く、どうせ採択されない」という先入観を持つ企業は少なくありません。しかし、省エネ系補助金では、直近実績として85%を超える採択率が確認できる公募があります。</p>
+<h3>参考：令和6年度補正予算事業・設備単位型の採択実績</h3>
+<div class="table-scroll"><table><thead><tr><th>公募回</th><th>対象公募</th><th>申請件数</th><th>採択件数</th><th>採択率</th></tr></thead><tbody><tr><td>1次公募</td><td>令和6年度補正予算 省エネルギー投資促進支援事業</td><td>2,077件</td><td>1,457件</td><td>70.1%</td></tr>
+<tr><td>2次公募</td><td>令和6年度補正予算 省エネルギー投資促進支援事業</td><td>1,635件</td><td>1,403件</td><td>85.8%</td></tr>
+<tr><td>3次公募</td><td>令和6年度補正予算 省エネルギー投資促進支援事業</td><td>677件</td><td>462件</td><td>68.2%</td></tr></tbody></table></div>
+<p>出典： SII「令和6年度補正予算 省エネルギー投資促進支援事業 交付決定 新規採択事業について」内の「1次公募・2次公募・3次公募 新規採択事業の結果について」。</p>
+<p>2次公募の85.8%は非常に高い水準ですが、1次公募は70.1%、3次公募は68.2%でした。したがって、「85%超」は訴求力のある実績ではあるものの、すべての年度・すべての公募回で同水準になるとは限りません。</p>
+<h3>採択率を理解するうえでの実務ポイント</h3>
+<p>省エネ補助金は、単なる先着順ではありません。SIIの公募情報では、採択事業者の決定にあたり、事業区分ごとの評価項目に従って審査を行い、外部審査委員会の評価を踏まえ、上位者から予算の範囲内で採択するとされています。</p>
+<p>そのため、申請前に見るべきポイントは次の4つです。</p>
+<ul><li>対象設備がSIIの指定設備・対象設備に該当するか</li><li>省エネ率・省エネ量・経費当たり省エネ量などの要件を満たせるか</li><li>交付決定前に発注・契約していないか</li><li>見積書、設備仕様、エネルギー計算、社内決裁、資金計画に不備がないか</li></ul>
+<p>「採択率が高いから申し込む」ではなく、「要件を満たせる設備投資を、書類不備なく申請する」ことが重要です。</p>
+</section>
+<section class="article-section" id="ポイント2まずは申請型を仮決めするⅲ型だけでなくⅰⅱgxsc連携も検討対象"><h2>ポイント2：まずは申請型を仮決めする。Ⅲ型だけでなくⅠ・Ⅱ・GX・SC連携も検討対象</h2>
+<p>このポイントの要点： 省エネ補助金は、設備単体の更新か、工場全体の更新か、燃料転換か、サプライチェーン全体の取組かで選ぶべき枠が変わります。</p>
+<p>省エネ補助金を検討する際に最初に行うべきことは、「補助金が使えるか」を漠然と調べることではなく、自社の投資内容に合う申請型を仮決めすることです。</p>
+<p>同じ省エネ投資でも、設備単体の更新なのか、工場全体の大規模更新なのか、燃料転換を伴うのか、GX性能の高い設備を導入するのか、サプライチェーン全体で取り組むのかによって、見るべき枠が変わります。</p>
+<h3>申請型の大枠</h3>
+<div class="table-scroll"><table><thead><tr><th>申請型・枠</th><th>一言説明</th><th>向いているケース</th></tr></thead><tbody><tr><td>工場・事業場型</td><td>工場・事業場全体で省エネを図る大型枠</td><td>複数設備を組み合わせ、大きな省エネ効果を狙う</td></tr>
+<tr><td>電化・脱炭素燃料転換型</td><td>化石燃料設備から電化・低炭素燃料設備へ転換する枠</td><td>ボイラ、工業炉、ヒートポンプ、水素対応設備等を検討している</td></tr>
+<tr><td>Ⅲ型設備単位型</td><td>指定設備への更新を設備単位で申請する枠</td><td>空調、ボイラ、変圧器、制御機能付きLED、生産設備などを更新する</td></tr>
+<tr><td>GX設備単位型</td><td>GX要件やトップ性能設備を満たす設備導入を支援する枠</td><td>より高性能な省エネ設備、GX対応メーカー製品を導入したい</td></tr>
+<tr><td>エネルギー需要最適化型</td><td>EMS等を活用して需要最適化を図る枠</td><td>エネルギーマネジメント、見える化、制御を高度化したい</td></tr>
+<tr><td>サプライチェーン連携枠</td><td>サプライチェーン上の複数企業で省エネを進める枠</td><td>大企業・中核企業が取引先と共同で省エネ投資を進めたい</td></tr></tbody></table></div>
+<h3>Ⅱ型（電化・脱炭素燃料転換型）の補助率も確認しておく</h3>
+<p>令和7年度補正予算の設備単位型公募要領では、Ⅱ型（電化・脱炭素燃料転換型）について、以下の補助率が示されています。</p>
+<div class="table-scroll"><table><thead><tr><th>事業区分</th><th>補助対象経費</th><th>補助率</th><th>補助上限額</th></tr></thead><tbody><tr><td>更新事業</td><td>設備費、工事費（中小企業者等のみ）</td><td>1/2以内</td><td>3億円／事業全体、電化する場合は5億円／事業全体</td></tr>
+<tr><td>改造事業</td><td>設備費、工事費</td><td>1/2以内</td><td>3億円／事業全体</td></tr>
+<tr><td>新設事業</td><td>設備費、工事費（中小企業者等のみ）</td><td>1/5以内</td><td>3億円／事業全体</td></tr></tbody></table></div>
+<p>出典： SII「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型）公募要領」内のⅡ型（電化・脱炭素燃料転換型）に関する記載。</p>
+<aside class="note"><p class="note-title">大企業・中堅企業の工事費に関する注意点</p><p>更新事業・新設事業では、工事費の補助対象可否が企業区分によって異なる場合があります。大企業・中堅企業がⅡ型（更新・新設事業）を申請する場合の工事費補助の可否は、最新の公募要領で必ず確認してください。</p></aside>
+<p>燃料転換・電化を検討している企業は、Ⅲ型設備単位型だけでなく、Ⅱ型も必ず比較してください。特にボイラ、工業炉、産業ヒートポンプ、業務用ヒートポンプ給湯器、高効率コージェネレーション等は、設備単位型の指定設備としての該当可否だけでなく、Ⅱ型の対象設備になるかも確認すべきです。</p>
+<h3>大企業も対象になり得る</h3>
+<p>「補助金は中小企業向け」というイメージがありますが、SIIの省エネ系補助金は、中小企業だけを対象にした制度ではありません。一定規模以上のエネルギー使用事業者や大企業も、要件を満たせば対象になり得ます。</p>
+<p>経済産業省の公表資料では、2023年度実績（2024年度提出）の省エネ法定期報告に基づくクラス分け結果として、Sクラスが52.7%、Aクラスが31.8%とされています。S・Aクラスの企業は、申請可能性を優先的に確認すべき層です。</p>
+<aside class="note"><p class="note-title">まず確認すべきこと</p><p>自社の省エネ法上のクラス（S・A・B・C）は、毎年度提出している省エネ法の定期報告書や、経済産業局への提出記録、省エネ法対応を担当する社内部署で確認します。</p><p>不明な場合は、エネルギー管理士、施設管理部門、環境・サステナビリティ部門、または省エネ法の届出・報告を担当している部署に確認してください。</p></aside>
+</section>
+<section class="article-section" id="ポイント3ⅲ型設備単位型は設備費のみ補助率13以内上限1億円が基本"><h2>ポイント3：Ⅲ型設備単位型は「設備費のみ・補助率1/3以内・上限1億円」が基本</h2>
+<p>このポイントの要点： Ⅲ型設備単位型は、指定設備への更新を設備単位で申請できるため、製造業・工場で検討しやすい枠です。</p>
+<p>製造業・工場で最も検討しやすい枠の一つが、Ⅲ型設備単位型です。対象となる指定設備を導入する事業で、工場全体の複雑な省エネ計算よりも、設備区分ごとの要件を確認しながら申請を組み立てやすい点が特徴です。</p>
+<h3>Ⅲ型設備単位型（従来枠）の基本条件</h3>
+<div class="table-scroll"><table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>補助対象経費</td><td>設備費のみ</td></tr>
+<tr><td>補助率</td><td>補助対象経費の1/3以内</td></tr>
+<tr><td>補助上限額</td><td>1億円／事業全体</td></tr>
+<tr><td>補助下限額</td><td>30万円／事業全体</td></tr>
+<tr><td>主な省エネ要件</td><td>計画省エネ率10%以上、計画省エネ量1kl以上、経費当たり計画省エネ量1kl/千万円以上のいずれか</td></tr></tbody></table></div>
+<p>出典： SII「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型）公募要領」内の「（Ⅲ）設備単位型［従来枠］」補助対象経費・補助率・補助金限度額・申請要件。</p>
+<h3>1,000万円の設備投資なら、いくら補助されるか</h3>
+<p>Ⅲ型設備単位型（従来枠）で、補助対象経費が1,000万円、補助率が1/3以内の場合、単純計算では補助額の上限目安は約333万円です。</p>
+<p>ただし、実際の補助対象経費は、設備費のうち公募要領で認められる範囲に限られます。工事費、既存設備撤去費、処分費、消費税、対象外設備費などが含まれる場合、見積総額と補助対象経費は一致しないことがあります。</p>
+<aside class="note"><p class="note-title">実務上の注意</p><p>「見積総額 × 補助率」で単純計算すると、実際の補助額とずれる可能性があります。補助額を試算する際は、設備費・工事費・撤去費・付帯費・消費税を分け、どこまでが補助対象経費になるかを確認してください。</p></aside>
+</section>
+<section class="article-section" id="ポイント4gx設備単位型ⅱ型は更新だけでなく新設燃料転換も検討対象になる"><h2>ポイント4：GX設備単位型・Ⅱ型は、更新だけでなく新設・燃料転換も検討対象になる</h2>
+<p>このポイントの要点： GX設備単位型のトップ性能枠やⅡ型では、従来の「既存設備の更新」だけでなく、新設・改造・燃料転換が検討対象になる場合があります。</p>
+<p>令和7年度補正予算事業では、設備単位型の中にGX設備単位型が設定されています。従来の設備更新だけでなく、GX要件を満たすメーカー製品や、トップ性能設備の導入を支援する枠です。</p>
+<h3>GX設備単位型の主な枠</h3>
+<div class="table-scroll"><table><thead><tr><th>枠</th><th>対象</th><th>新設・更新</th><th>補助率</th><th>補助上限額</th></tr></thead><tbody><tr><td>メーカー強化枠</td><td>GX要件を満たすメーカーが製造・販売する指定設備</td><td>更新</td><td>1/3以内</td><td>3億円／事業全体</td></tr>
+<tr><td>トップ性能枠</td><td>SIIが定めるトップ性能設備</td><td>更新</td><td>1/2以内</td><td>3億円／事業全体</td></tr>
+<tr><td>トップ性能枠</td><td>SIIが定めるトップ性能設備</td><td>新設</td><td>1/5以内</td><td>3億円／事業全体</td></tr></tbody></table></div>
+<p>出典： SII「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型）公募要領」および同事業概要パンフレット。</p>
+<p>GX設備単位型のポイントは、トップ性能枠では新設事業も対象になり得ることです。既存設備の更新だけでなく、新たな生産ライン・工場拡張・設備新設を検討する企業にとって、検討余地があります。</p>
+<p>一方で、対象設備、メーカー要件、トップ性能設備の範囲は限定されます。通常の設備単位型より補助率が高いケースがある一方、要件確認の重要性も高くなります。</p>
+<aside class="note"><p class="note-title">トップ性能設備の確認方法</p><p>対象となるトップ性能設備の種類・要件は、SII公募情報ページに掲載される公募要領・指定設備リストで確認できます。設備の型番・性能値がリストの要件を満たすかどうかは、見積書・仕様書と照合して確認してください。</p></aside>
+<h3>Ⅱ型は「電化」「低炭素燃料転換」「水素対応」を確認する</h3>
+<p>Ⅱ型（電化・脱炭素燃料転換型）は、既存設備を省エネ型設備へ更新して電化または低炭素燃料への転換を図る事業、既存設備を水素燃焼可能な設備へ改造する事業、新設・新築の事業所または既存事業所に水素燃料を活用可能な設備を新設する事業などが対象になり得ます。</p>
+<p>ボイラ・工業炉・給湯器・ヒートポンプ等を検討している場合は、単に「設備単位型に該当するか」だけでなく、Ⅱ型として申請できるかを確認することで、より適した申請方針を選べる可能性があります。</p>
+</section>
+<section class="article-section" id="ポイント5sc連携枠はサプライチェーン上の4者以上で取り組む大型枠"><h2>ポイント5：SC連携枠は、サプライチェーン上の4者以上で取り組む大型枠</h2>
+<p>このポイントの要点： SC連携枠は、単独企業の設備更新ではなく、サプライチェーン上の複数企業が共同で設備更新計画を立案する大型枠です。</p>
+<p>サプライチェーン連携枠（SC連携枠）は、サプライチェーン上の複数企業が共同で省エネ・非化石転換に取り組むための大型枠です。</p>
+<p>SIIの令和7年度補正予算事業の公募要領では、サプライチェーン連携枠について、サプライチェーン上の4者以上が共同で立案した設備更新計画を支援する事業として示されています。</p>
+<h3>SC連携枠の補助率・補助上限</h3>
+<div class="table-scroll"><table><thead><tr><th>区分</th><th>中小企業者等</th><th>大企業・その他</th></tr></thead><tbody><tr><td>補助率</td><td>1/2以内。ただし、投資回収年数5年未満の事業は1/3以内</td><td>1/3以内。ただし、投資回収年数7年未満の事業は1/4以内</td></tr></tbody></table></div>
+<p>補助上限は、単年度事業か複数年度事業か、また非化石転換を伴うかによって変わります。SC連携枠では、以下のように補助上限額・下限額が設定されています。</p>
+<div class="table-scroll"><table><thead><tr><th>事業期間</th><th>補助上限額</th><th>補助下限額</th></tr></thead><tbody><tr><td>単年度事業</td><td>15億円。非化石転換の場合は20億円</td><td>100万円</td></tr>
+<tr><td>複数年度事業</td><td>20億円／事業全体（15億円／年度）。非化石転換の場合は30億円／事業全体（20億円／年度）</td><td>100万円／年度</td></tr></tbody></table></div>
+<p>出典： SII「令和7年度補正予算 省エネ・非化石転換補助金（工場・事業場型）公募要領」および同事業概要パンフレット。</p>
+<h3>SC連携枠が向いている企業</h3>
+<ul><li>Scope 3排出量の削減を進めたい大企業・中核企業</li><li>主要サプライヤーのエネルギーコストやCO2排出量を把握したい企業</li><li>グループ会社・協力会社・取引先を巻き込んで省エネ投資を進めたい企業</li><li>サプライヤー側として、親会社・主要取引先から脱炭素対応を求められている企業</li></ul>
+<h3>申請前に確認すべきこと</h3>
+<p>SC連携枠では、単独企業の設備更新よりも、関係者調整の難易度が高くなります。少なくとも以下を事前に整理しておく必要があります。</p>
+<ul><li>共同実施者となる企業の候補</li><li>各社の対象設備・投資規模・省エネ効果</li><li>取りまとめ役となる企業・担当部署</li><li>設備投資スケジュール</li><li>各社の見積取得・社内決裁・資金負担</li><li>エネルギー使用量やCO2削減量のデータ提供可否</li></ul>
+<p>詳細な参加要件、共同申請の実務、最低限必要な書類は、公募要領およびSIIの最新資料で確認してください。</p>
+</section>
+<section class="article-section" id="対象設備空調ボイラ変圧器だけでなく生産設備も対象になる"><h2>対象設備：空調・ボイラ・変圧器だけでなく、生産設備も対象になる</h2>
+<p>省エネ補助金の対象設備は、空調や照明だけではありません。製造業・工場では、ユーティリティ設備に加え、生産設備が対象になる点が重要です。</p>
+<h3>Ⅲ型設備単位型の主な対象設備</h3>
+<div class="table-scroll"><table><thead><tr><th>カテゴリ</th><th>対象設備例</th></tr></thead><tbody><tr><td>ユーティリティ設備</td><td>高効率空調、産業ヒートポンプ、業務用給湯器、高性能ボイラ、高効率コージェネレーション、低炭素工業炉、変圧器、冷凍冷蔵設備、産業用モータ</td></tr>
+<tr><td>照明設備</td><td>制御機能付きLED照明器具</td></tr>
+<tr><td>生産設備</td><td>工作機械、プラスチック加工機械、プレス機械、印刷機械、ダイカストマシン</td></tr>
+<tr><td>その他</td><td>SIIが認めた高性能な設備</td></tr></tbody></table></div>
+<p>出典： SII「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型）公募要領」内の「指定設備の設備区分」。</p>
+<aside class="note"><p class="note-title">対象設備リストの確認方法</p><p>対象設備の詳細は、公募要領別添の「指定設備一覧表」やSII公募情報ページの補助対象設備一覧で確認してください。上記はカテゴリの例示であり、申請時点の最新リストが正とされます。</p></aside>
+<aside class="note"><p class="note-title">LED照明に関する重要な注意点</p><p>SIIの設備単位型で対象となるのは、原則として制御機能付きLED照明器具です。通常のLED照明への交換は、SIIの省エネ補助金では対象外となる可能性があります。LED照明の補助金を検討する場合は、東京都のゼロエミ助成金など、自治体制度もあわせて確認してください。</p></aside>
+</section>
+<section class="article-section" id="2026年度実施分のスケジュール状況"><h2>2026年度実施分のスケジュール状況</h2>
+<p>2026年5月21日時点で確認できるSII公式情報では、令和7年度補正予算事業の1次公募は終了しています。設備単位型・工場・事業場型の公募情報ページでは、2次公募に関する概要・スケジュール等は、詳細が決まり次第SIIホームページで公表するとされています。</p>
+<p>なお、SIIの事業概要パンフレットでは、2次公募の公募期間は2026年6月上旬〜7月上旬予定、交付決定は2026年9月上旬予定とされています。ただし、正式な日程はSII公式サイトの公募情報で必ず確認してください。</p>
+<div class="table-scroll"><table><thead><tr><th>時期</th><th>状況</th><th>実務上の意味</th></tr></thead><tbody><tr><td>2026年3月30日〜2026年4月27日17時</td><td>設備単位型・工場・事業場型等の1次公募</td><td>終了済み</td></tr>
+<tr><td>2026年6月中旬予定</td><td>1次公募の交付決定予定</td><td>採択結果・交付決定後に発注・契約が可能</td></tr>
+<tr><td>2026年6月上旬〜7月上旬予定</td><td>2次公募の公募期間</td><td>パンフレット上の予定。正式情報はSII公募ページで要確認</td></tr>
+<tr><td>2026年9月上旬予定</td><td>2次公募の交付決定予定</td><td>発注・契約時期、工事期間、支払い時期を逆算する必要あり</td></tr>
+<tr><td>今後</td><td>次年度公募への準備</td><td>対象設備確認、見積取得、省エネ計算、社内決裁を先行</td></tr></tbody></table></div>
+<p>出典： SII「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型／工場・事業場型）公募情報」および事業概要パンフレット。</p>
+<h3>申請から交付決定までは2〜3ヶ月程度のバッファを見込む</h3>
+<p>2026年度実施分の1次公募では、4月27日締切、6月中旬交付決定予定とされています。2次公募についても、パンフレット上では7月上旬締切、9月上旬交付決定予定とされており、申請締切から交付決定まで約1.5〜2ヶ月程度の期間が想定されています。</p>
+<p>ただし、年度・公募回・審査状況・書類不備の有無によって前後します。設備発注・契約は交付決定後が原則であるため、実務上は2〜3ヶ月程度のバッファを見込んで、工事・納品・支払いのスケジュールを組むことを推奨します。</p>
+<h3>補助金は後払いを前提に資金計画を組む</h3>
+<p>補助金は、交付決定を受けた後に設備発注・契約・納品・検収・支払い・実績報告等を行い、SIIの確認を経て支払われる流れが基本です。</p>
+<p>そのため、補助対象経費の全額または大部分を一時的に立て替える資金計画が必要になります。とくに設備投資額が大きい場合は、財務部門・経理部門と早期に以下を確認してください。</p>
+<ul><li>交付決定前に発注・契約しない運用にできるか</li><li>設備費・工事費の支払い時期</li><li>補助金入金までの資金繰り</li><li>補助対象外経費を含めた総投資額</li><li>税務・会計上の処理</li></ul>
+</section>
+<section class="article-section" id="申請前チェックリスト"><h2>申請前チェックリスト</h2>
+<p>公募開始後に動き出すと、見積取得、省エネ計算、社内決裁、書類作成が間に合わない場合があります。初回申請の場合、社内実務上は、公募開始から提出まで4〜8週間程度の準備期間を見込むことを推奨します。</p>
+<h3>申請前に確認すべき項目</h3>
+<ul class="check-list"><li>省エネ法における自社のクラス（S・A・B・C）を確認した</li><li>省エネ法の定期報告書・中長期計画書の提出状況を確認した</li><li>投資規模・設備種別をもとに申請型（Ⅰ〜Ⅳ型、GX、SC連携等）の仮方針を決めた</li><li>更新・新設を検討している設備が補助対象になるか確認した</li><li>対象設備のメーカー・型番・仕様書を整理した</li><li>現在の設備と更新後設備のエネルギー使用量を比較できる資料を準備した</li><li>省エネ率・省エネ量・経費当たり省エネ量を試算した</li><li>見積書を取得し、設備費・工事費・撤去費・付帯費・消費税を分けた</li><li>交付決定後に発注・契約する社内運用を確認した</li><li>補助金入金までの立替資金を財務部門と確認した</li><li>申請書類の作成・提出を担当する社内担当者を決定した</li></ul>
+<h3>補助金申請で失敗しないための鉄則</h3>
+<ul><li>交付決定前に発注・契約しない：交付決定前の発注・契約・支払いは補助対象外となる可能性があります。</li><li>補助対象経費と対象外経費を分ける：見積総額ではなく、補助対象経費を確認してください。</li><li>「確実に達成できる省エネ数値」で申請する：過大な省エネ効果を見込むと、実績報告時に問題になる可能性があります。</li><li>証拠書類を保管する：見積書、契約書、発注書、納品書、検収書、請求書、支払証憑、写真、図面、仕様書等は保管が必要です。</li><li>最新の公募要領を確認する：年度・公募回により、補助率、対象設備、要件、様式、スケジュールが変わる可能性があります。</li></ul>
+</section>
+<section class="article-section" id="スリーベネフィッツのサポート実績"><h2>スリーベネフィッツのサポート実績</h2>
+<p>スリーベネフィッツでは、省エネ設備の投資計画段階から申請型の選定・補助対象費用の整理・書類準備のサポートまで、工事業者・メーカーとは独立した立場で対応しています。過去にサポートした事業者の採択実績の一部を紹介します。</p>
+<aside class="note"><p>企業名・所在地等の詳細は守秘義務の観点から非公開としています。</p></aside>
+<aside class="note warning"><p>⚠️ 内部レビュー用ダミーデータ（公開前に実際の採択事例に差し替えてください）</p></aside>
+<h3>事例1｜宿泊業・LED照明への更新</h3>
+<div class="table-scroll"><table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>業種</td><td>宿泊業（ビジネスホテル）</td></tr>
+<tr><td>規模</td><td>従業員52名</td></tr>
+<tr><td>地域</td><td>大阪府</td></tr>
+<tr><td>申請型</td><td>Ⅲ型設備単位型（従来枠）</td></tr>
+<tr><td>更新設備</td><td>制御機能付きLED照明器具（客室全108室・共用部・宴会場）</td></tr>
+<tr><td>総工事費</td><td>約650万円</td></tr>
+<tr><td>補助金額</td><td>約160万円</td></tr>
+<tr><td>省エネ効果</td><td>照明の年間消費電力量 約51%削減 / 年間電気代 約98万円削減</td></tr>
+<tr><td>投資回収見込み</td><td>補助後の実質負担 約490万円 ÷ 年間削減額98万円 → 約5年</td></tr></tbody></table></div>
+<h3>事例2｜製造業・高効率空調への更新</h3>
+<div class="table-scroll"><table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>業種</td><td>製造業（自動車部品製造）</td></tr>
+<tr><td>規模</td><td>従業員135名</td></tr>
+<tr><td>地域</td><td>愛知県</td></tr>
+<tr><td>申請型</td><td>Ⅲ型設備単位型（従来枠）</td></tr>
+<tr><td>更新設備</td><td>高効率インバータ制御空調4台（工場棟3台・事務棟1台）</td></tr>
+<tr><td>総工事費</td><td>約1,380万円</td></tr>
+<tr><td>補助金額</td><td>約340万円</td></tr>
+<tr><td>省エネ効果</td><td>空調の年間消費電力 約34%削減 / 年間電気代 約156万円削減</td></tr>
+<tr><td>投資回収見込み</td><td>補助後の実質負担 約1,040万円 ÷ 年間削減額156万円 → 約6.7年</td></tr></tbody></table></div>
+<h3>事例3｜製造業・重油ボイラから産業用ヒートポンプへの電化転換</h3>
+<div class="table-scroll"><table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody><tr><td>業種</td><td>製造業（食品製造・乳製品加工）</td></tr>
+<tr><td>規模</td><td>従業員78名</td></tr>
+<tr><td>地域</td><td>北海道</td></tr>
+<tr><td>申請型</td><td>Ⅱ型電化・脱炭素燃料転換型（更新事業）</td></tr>
+<tr><td>更新設備</td><td>産業用ヒートポンプ（重油ボイラからの電化転換）</td></tr>
+<tr><td>総工事費</td><td>約3,200万円</td></tr>
+<tr><td>補助金額</td><td>約1,600万円</td></tr>
+<tr><td>省エネ効果</td><td>年間エネルギーコスト（重油・電気代合算）約40%削減 / 年間削減額 約280万円</td></tr>
+<tr><td>投資回収見込み</td><td>補助後の実質負担 約1,600万円 ÷ 年間削減額280万円 → 約5.7年</td></tr></tbody></table></div>
+<p>ご自身の設備投資がどの事例に近いか、申請型の選択肢と補助額の試算については、お気軽にご相談ください。</p>
+</section>
+<section class="article-section" id="まとめ今すぐ行うべき確認アクション"><h2>まとめ：今すぐ行うべき確認アクション</h2>
+<div class="table-scroll"><table><thead><tr><th>ポイント</th><th>内容</th><th>今すぐできるアクション</th></tr></thead><tbody><tr><td>採択率85%超の実績</td><td>令和6年度補正2次公募では、設備単位型で85.8%の採択率</td><td>最新公募の採択結果と予算残額を確認する</td></tr>
+<tr><td>大企業も対象になり得る</td><td>S・Aクラスの事業者は申請可能性を確認すべき</td><td>省エネ法クラス、定期報告書、中長期計画書を確認する</td></tr>
+<tr><td>Ⅲ型設備単位型</td><td>設備費のみ、補助率1/3以内、上限1億円</td><td>更新候補設備が指定設備に該当するか確認する</td></tr>
+<tr><td>GX設備単位型</td><td>トップ性能枠では更新1/2以内、新設1/5以内の可能性</td><td>検討中設備がトップ性能設備・GX要件対象か確認する</td></tr>
+<tr><td>Ⅱ型電化・脱炭素燃料転換型</td><td>更新・改造は1/2以内、新設は1/5以内</td><td>燃料転換・電化・水素対応の可能性を確認する</td></tr>
+<tr><td>SC連携枠</td><td>サプライチェーン上の4者以上で実施する大型枠</td><td>共同実施者候補、投資規模、データ提供可否を棚卸しする</td></tr>
+<tr><td>後払い・資金計画</td><td>補助金入金前に支払いが発生する可能性が高い</td><td>財務部門と立替資金・支払時期を確認する</td></tr></tbody></table></div>
+<p>省エネ補助金は、単に「補助率が高い」「採択率が高い」という理由だけで使う制度ではありません。自社の設備投資計画、省エネ効果、資金繰り、申請工数、交付決定後の実行スケジュールを整理したうえで、最も適した申請型を選ぶことが重要です。</p>
+<p>とくに2026年度実施分は、1次公募がすでに終了しているため、2次公募または次年度公募に向けて、対象設備の確認・省エネ計算・見積取得・社内決裁を先に進めておくことを推奨します。</p>
+<p>複数の申請型の比較、省エネ要件の試算、補助対象経費と対象外経費の切り分け、書類準備の整理など、検討初期段階での確認作業は量が多くなりがちです。</p>
+<p>スリーベネフィッツでは、工事業者・メーカーとは独立した立場で、補助対象の可否確認・申請型の比較・補助対象費用と対象外費用の切り分けをサポートしています。設備投資計画の段階から確認しておくことで、交付決定後に「この費用は補助対象外だった」「交付決定前に発注してしまった」といった失敗リスクを事前に減らすことができます。</p>
+<p>2026年度の2次公募は、事業概要パンフレット上では6月上旬〜7月上旬の受付予定とされています。書類作成・見積取得・社内決裁を踏まえると、準備に使える時間は多くありません。</p>
+<p>「自社の設備投資が対象になるか分からない」「Ⅲ型とⅡ型のどちらを見るべきか判断できない」「補助金を前提に社内稟議を進めたい」という段階から、早めに相談しておくことをお勧めします。</p>
+<p>ご相談・詳細確認はこちら：<a href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">無料相談はこちら（返信1営業日以内）</a></p>
+</section>
+<section class="article-section" id="参考資料公式情報"><h2>参考資料・公式情報</h2>
+<ul><li>一般社団法人 環境共創イニシアチブ（SII）「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型） 公募情報」</li></ul>
+<p>- https://sii.or.jp/setsubi07r/overview.html</p>
+<ul><li>一般社団法人 環境共創イニシアチブ（SII）「令和7年度補正予算 省エネ・非化石転換補助金（工場・事業場型） 公募情報」</li></ul>
+<p>- https://sii.or.jp/koujou07r/overview.html</p>
+<ul><li>一般社団法人 環境共創イニシアチブ（SII）「令和6年度補正予算 省エネルギー投資促進支援事業 交付決定 新規採択事業について」</li></ul>
+<p>- https://sii.or.jp/setsubi06r/decision.html</p>
+<ul><li>資源エネルギー庁「事業者クラス分け評価制度」</li></ul>
+<p>- https://www.enecho.meti.go.jp/category/saving_and_new/saving/enterprise/overview/institution/</p>
+<ul><li>経済産業省「省エネ法定期報告書（2023年度実績）に基づく省エネ優良事業者（Sクラス事業者）の公表」</li></ul>
+<p>- https://www.meti.go.jp/press/2024/03/20250331003/20250331003.html</p>
+<ul><li>SII「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型） 事業概要パンフレット」</li></ul>
+<p>- SIIの設備単位型公募情報ページ内「事業概要パンフレット」から確認</p>
+<ul><li>SII「令和7年度補正予算 省エネ・非化石転換補助金（工場・事業場型） 事業概要パンフレット」</li></ul>
+<p>- SIIの工場・事業場型公募情報ページ内「事業概要パンフレット」から確認</p>
+<aside class="note"><p class="note-title">公募要領・パンフレットPDFについて</p><p>公募要領PDFや事業概要パンフレットは年度更新・差し替えでURLが変更される可能性があるため、本記事では原則としてSIIの公募情報ページを参照先として掲載しています。最新の公募要領・交付規程・申請の手引き・パンフレットは、各公募情報ページ内の資料一覧から確認してください。</p></aside>
+</section>
+<section class="article-section" id="免責事項"><h2>免責事項</h2>
+<p>本記事の内容は、2026年5月21日時点で確認できる公開情報に基づきます。補助金制度の名称、対象設備、補助率、補助上限額、申請要件、公募スケジュール、必要書類、審査方法は、年度・公募回・予算状況により変更される場合があります。申請前には必ずSII公式サイト、最新の公募要領、交付規程、手引き、Q&amp;Aを確認してください。</p>
+<p>本記事は一般的な情報提供を目的としたものであり、採択、交付決定、補助金額、入金時期を保証するものではありません。個別案件の申請可否や補助対象経費の判断は、最新の公募要領およびSIIの判断に従ってください。</p>
+</section>
+        <div class="inline-cta">
+          <div>
+            <h2>設備投資が補助対象になるか、早めに確認しませんか</h2>
+            <p>申請型の比較、補助対象経費の切り分け、省エネ計算・見積取得前の論点整理からご相談いただけます。</p>
+          </div>
+          <a class="primary-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">無料相談はこちら</a>
+        </div>
+      </article>
+
+      <aside class="cta-rail" aria-label="相談導線">
+        <section class="side-card consult-card">
+          <h2>補助金申請サポート</h2>
+          <p>対象設備・申請型・補助対象経費の確認から、書類準備の進め方までご相談ください。</p>
+          <a class="primary-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">問い合わせる</a>
+          <div class="cta-support">返信目安：1営業日以内。設備投資の検討初期でも相談できます。</div>
+        </section>
+        <section class="side-card">
+          <h2>関連ナレッジ</h2>
+          <div class="related-list">
+            <a href="https://www.3benefits.jp/blog/led-subsidy-application-requirements/" target="_blank" rel="noopener">LED照明補助金・助成金の申請要件と申請方法</a>
+            <a href="https://www.3benefits.jp/subsidy/" target="_blank" rel="noopener">省エネ補助金申請サポート</a>
+            <a href="https://sii.or.jp/" target="_blank" rel="noopener">SII公式サイトで最新情報を確認</a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>3benefits</strong><br>省エネ設備のトータルコンサルティング</div>
+      <div>本ページはHTMLデザイン確認用の静的ページです。公開時はCMS仕様に合わせて調整してください。</div>
+    </div>
+  </footer>
+
+  <script>
+    const progress = document.getElementById("progress-bar");
+    const updateProgress = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.width = height > 0 ? ((scrollTop / height) * 100) + "%" : "0";
+    };
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    updateProgress();
+  </script>
+</body>
+</html>
