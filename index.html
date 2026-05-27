@@ -49,14 +49,56 @@
       position: sticky;
       top: 0;
       z-index: 900;
-      background: rgba(255,255,255,.94);
-      border-bottom: 1px solid rgba(220,230,237,.86);
-      backdrop-filter: blur(14px);
+      background: #fff;
+      border-bottom: 1px solid rgba(210,224,232,.9);
+      box-shadow: 0 10px 28px rgba(7,43,68,.08);
+    }
+    .header-topline {
+      background: #0d5f83;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .header-topline-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 7px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+    .phone-link {
+      color: #fff;
+      letter-spacing: .02em;
+      font-weight: 900;
+    }
+    .utility-link {
+      min-height: 30px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      color: #fff;
+      line-height: 1;
+    }
+    .utility-link:hover {
+      background: rgba(255,255,255,.24);
+      text-decoration: none;
+    }
+    .inquiry-link {
+      background: var(--orange);
+      box-shadow: 0 8px 18px rgba(240,138,36,.28);
     }
     .header-inner {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 14px 22px;
+      padding: 15px 22px 11px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -65,46 +107,72 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
-      color: var(--navy);
-      font-weight: 800;
-      line-height: 1.1;
-      white-space: nowrap;
+      min-width: 190px;
     }
-    .brand-mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 9px;
-      background: linear-gradient(135deg, var(--green), var(--blue));
-      position: relative;
-      box-shadow: 0 8px 18px rgba(22,169,113,.24);
-    }
-    .brand-mark::after {
-      content: "";
-      position: absolute;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: var(--yellow);
-      right: 5px;
-      top: 5px;
-    }
-    .brand small {
-      display: block;
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 700;
-      margin-top: 3px;
+    .brand img {
+      width: 210px;
+      height: auto;
     }
     .header-nav {
       display: flex;
-      align-items: center;
-      gap: 20px;
+      align-items: stretch;
+      justify-content: flex-end;
+      gap: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
       color: var(--muted);
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
     }
-    .header-nav a { color: #3f4e59; }
+    .nav-item {
+      position: relative;
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 12px;
+      color: #223846;
+      white-space: nowrap;
+      cursor: default;
+    }
+    a.nav-link { cursor: pointer; }
+    .nav-item:hover > .nav-link,
+    .nav-link:hover {
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .mega-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      min-width: 260px;
+      padding: 14px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 20px 44px rgba(7,43,68,.18);
+      border: 1px solid #d9e7ed;
+    }
+    .nav-item:hover .mega-menu {
+      display: grid;
+      gap: 8px;
+    }
+    .mega-menu a {
+      display: block;
+      padding: 9px 10px;
+      border-radius: 8px;
+      color: #324b5b;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .mega-menu a:hover {
+      background: #eef8fb;
+      color: var(--blue);
+      text-decoration: none;
+    }
     .header-cta,
     .primary-cta {
       display: inline-flex;
@@ -603,23 +671,77 @@
       font-size: 14px;
     }
     .footer {
-      background: #082942;
-      color: rgba(255,255,255,.78);
+      background: #f3f8fb;
+      color: #263d4c;
+      border-top: 1px solid #d6e6ed;
     }
-    .footer-inner {
+    .footer_nav_wrap {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 34px 22px;
-      display: flex;
-      justify-content: space-between;
-      gap: 22px;
-      flex-wrap: wrap;
+      padding: 46px 22px 38px;
+      display: grid;
+      grid-template-columns: minmax(240px, 310px) 1fr;
+      gap: 42px;
       font-size: 13px;
     }
-    .footer strong { color: #fff; }
+    .footer_address {
+      margin: 0;
+      font-style: normal;
+    }
+    .footer_logo img {
+      width: 220px;
+      height: auto;
+      margin-bottom: 18px;
+    }
+    .footer_company_name {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 16px;
+    }
+    .footer_company_address,
+    .footer_address p {
+      margin: 0 0 12px;
+      line-height: 1.8;
+    }
+    .footer_nav {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px;
+    }
+    .footer_nav ul {
+      margin: 0 0 22px;
+      padding: 0;
+      list-style: none;
+    }
+    .footer_nav li {
+      margin: 0 0 9px;
+      line-height: 1.55;
+    }
+    .footer_nav .ttl {
+      color: var(--navy);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+    .footer a {
+      color: #345669;
+    }
+    .footer a:hover {
+      color: var(--blue);
+    }
+    .copyright {
+      background: #0d5f83;
+      color: #fff;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 12px;
+    }
 
     @media (max-width: 1160px) {
-      .header-nav a:not(.header-cta) { display: none; }
+      .header-topline-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .header-nav { flex-wrap: wrap; justify-content: flex-start; }
+      .mega-menu { left: 0; transform: none; }
       .page {
         grid-template-columns: 1fr;
       }
@@ -635,6 +757,12 @@
     }
 
     @media (max-width: 980px) {
+      .footer_nav_wrap {
+        grid-template-columns: 1fr;
+      }
+      .footer_nav {
+        grid-template-columns: 1fr 1fr;
+      }
       .hero-inner {
         grid-template-columns: 1fr;
         min-height: auto;
@@ -651,7 +779,12 @@
 
     @media (max-width: 680px) {
       .header-inner { padding: 11px 16px; }
-      .brand small, .header-nav { display: none; }
+      .header-topline-inner { padding: 7px 16px; }
+      .header-actions { flex-wrap: wrap; white-space: normal; }
+      .brand img { width: 178px; }
+      .header-nav { display: none; }
+      .footer_nav { grid-template-columns: 1fr; }
+      .footer_nav_wrap { padding: 34px 16px 28px; }
       .hero-inner {
         padding: 34px 16px 42px;
         gap: 26px;
@@ -713,16 +846,58 @@
 <body>
   <div id="progress-bar"></div>
   <header class="site-header">
+    <div class="header-topline">
+      <div class="header-topline-inner">
+        <span>ESCOエスコ・省エネ設備のトータルコンサルティング</span>
+        <div class="header-actions" aria-label="お問い合わせ導線">
+          <a class="phone-link" href="tel:0364536905">03-6453-6905</a>
+          <a class="utility-link" href="https://www.3benefits.jp/download/" target="_blank" rel="noopener">資料ダウンロード</a>
+          <a class="utility-link inquiry-link" href="https://www.3benefits.jp/inquiry/" target="_blank" rel="noopener">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
     <div class="header-inner">
       <a class="brand" href="https://www.3benefits.jp/" target="_blank" rel="noopener" aria-label="スリーベネフィッツ">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>3benefits<small>省エネ設備のトータルコンサルティング</small></span>
+        <img src="https://www.3benefits.jp/wp/wp-content/themes/3benefits2024/assets/img/common/top_logo.svg" alt="スリーベネフィッツ株式会社">
       </a>
-      <nav class="header-nav" aria-label="主要ナビゲーション">
-        <a href="https://www.3benefits.jp/service/" target="_blank" rel="noopener">省エネ・コスト削減</a>
-        <a href="https://www.3benefits.jp/subsidy/" target="_blank" rel="noopener">補助金申請サポート</a>
-        <a href="https://www.3benefits.jp/blog/" target="_blank" rel="noopener">ナレッジ</a>
-        <a class="header-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">無料相談</a>
+      <nav class="header-nav-wrap" aria-label="主要ナビゲーション">
+        <ul class="header-nav">
+        <li class="nav-item">
+          <span class="nav-link">省エネ・コスト削減</span>
+          <div class="mega-menu">
+            <a href="https://www.3benefits.jp/esco/" target="_blank" rel="noopener">ESCOサービス</a>
+            <a href="https://www.3benefits.jp/led-construction/" target="_blank" rel="noopener">LED工事</a>
+            <a href="https://www.3benefits.jp/air-conditioner-construction/" target="_blank" rel="noopener">空調工事</a>
+            <a href="https://www.3benefits.jp/tems/" target="_blank" rel="noopener">熱源機省エネ装置TEMS</a>
+            <a href="https://www.3benefits.jp/cubicle-construction/" target="_blank" rel="noopener">受電設備（キュービクル）工事</a>
+            <a href="https://www.3benefits.jp/evcharge/" target="_blank" rel="noopener">EV充電スタンド</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="https://www.3benefits.jp/solar/" target="_blank" rel="noopener">太陽光発電</a></li>
+        <li class="nav-item">
+          <span class="nav-link">衛生管理・防災商材</span>
+          <div class="mega-menu">
+            <a href="https://www.3benefits.jp/alcure/" target="_blank" rel="noopener">光触媒空気清浄機 ALCURE</a>
+            <a href="https://www.3benefits.jp/space/" target="_blank" rel="noopener">除菌剤 ウイルオフ</a>
+            <a href="https://www.3benefits.jp/underwater/" target="_blank" rel="noopener">水中除菌 クリアンス</a>
+            <a href="https://www.3benefits.jp/facerecognition/" target="_blank" rel="noopener">AIサーマルカメラ</a>
+            <a href="https://www.3benefits.jp/epb/" target="_blank" rel="noopener">防災タワーEPB</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.3benefits.jp/subsidy/" target="_blank" rel="noopener">補助金申請サポート</a>
+          <div class="mega-menu">
+            <a href="https://www.3benefits.jp/subsidy/" target="_blank" rel="noopener">省エネ補助金申請サポート</a>
+            <a href="https://www.3benefits.jp/subsidy-list1/" target="_blank" rel="noopener">2025年度版 国の省エネ補助金一覧</a>
+            <a href="https://www.3benefits.jp/subsidy-list2/" target="_blank" rel="noopener">2025年度版 自治体の省エネ補助金一覧</a>
+            <a href="https://www.3benefits.jp/subsidy-solar/" target="_blank" rel="noopener">太陽光発電補助金情報</a>
+            <a href="https://www.3benefits.jp/subsidy-air-conditioner/" target="_blank" rel="noopener">空調補助金情報</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="https://www.3benefits.jp/case/" target="_blank" rel="noopener">導入事例</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.3benefits.jp/blog/" target="_blank" rel="noopener">ナレッジ</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.3benefits.jp/about/" target="_blank" rel="noopener">会社情報</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -740,7 +915,7 @@
             <span class="meta-pill">対象 製造業・工場・大企業・中小企業・設備担当者・経営企画</span>
           </div>
           <div class="hero-actions">
-            <a class="primary-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">自社が対象か無料相談</a>
+            <a class="primary-cta" href="https://www.3benefits.jp/inquiry/" target="_blank" rel="noopener">自社が対象か無料相談</a>
             <a class="secondary-cta" href="#申請前チェックリスト">チェックリストを見る</a>
           </div>
         </div>
@@ -977,7 +1152,7 @@
 <p>スリーベネフィッツでは、工事業者・メーカーとは独立した立場で、補助対象の可否確認・申請型の比較・補助対象費用と対象外費用の切り分けをサポートしています。設備投資計画の段階から確認しておくことで、交付決定後に「この費用は補助対象外だった」「交付決定前に発注してしまった」といった失敗リスクを事前に減らすことができます。</p>
 <p>2026年度の2次公募は、事業概要パンフレット上では6月上旬〜7月上旬の受付予定とされています。書類作成・見積取得・社内決裁を踏まえると、準備に使える時間は多くありません。</p>
 <p>「自社の設備投資が対象になるか分からない」「Ⅲ型とⅡ型のどちらを見るべきか判断できない」「補助金を前提に社内稟議を進めたい」という段階から、早めに相談しておくことをお勧めします。</p>
-<p>ご相談・詳細確認はこちら：<a href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">無料相談はこちら（返信1営業日以内）</a></p>
+<p>ご相談・詳細確認はこちら：<a href="https://www.3benefits.jp/inquiry/" target="_blank" rel="noopener">無料相談はこちら（返信1営業日以内）</a></p>
 </section>
 <section class="article-section" id="参考資料公式情報"><h2>参考資料・公式情報</h2>
 <ul><li>一般社団法人 環境共創イニシアチブ（SII）「令和7年度補正予算 省エネ・非化石転換補助金（設備単位型） 公募情報」</li></ul>
@@ -1005,7 +1180,7 @@
             <h2>設備投資が補助対象になるか、早めに確認しませんか</h2>
             <p>申請型の比較、補助対象経費の切り分け、省エネ計算・見積取得前の論点整理からご相談いただけます。</p>
           </div>
-          <a class="primary-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">無料相談はこちら</a>
+          <a class="primary-cta" href="https://www.3benefits.jp/inquiry/" target="_blank" rel="noopener">無料相談はこちら</a>
         </div>
       </article>
 
@@ -1013,7 +1188,7 @@
         <section class="side-card consult-card">
           <h2>補助金申請サポート</h2>
           <p>対象設備・申請型・補助対象経費の確認から、書類準備の進め方までご相談ください。</p>
-          <a class="primary-cta" href="https://www.3benefits.jp/contact/" target="_blank" rel="noopener">問い合わせる</a>
+          <a class="primary-cta" href="https://www.3benefits.jp/inquiry/" target="_blank" rel="noopener">問い合わせる</a>
           <div class="cta-support">返信目安：1営業日以内。設備投資の検討初期でも相談できます。</div>
         </section>
         <section class="side-card">
@@ -1028,10 +1203,71 @@
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <div><strong>3benefits</strong><br>省エネ設備のトータルコンサルティング</div>
-      <div>本ページはHTMLデザイン確認用の静的ページです。公開時はCMS仕様に合わせて調整してください。</div>
+  <footer id="site-footer" class="footer">
+    <div class="footer_nav_wrap">
+      <address class="footer_address">
+        <div class="footer_address_inner">
+          <picture class="footer_logo">
+            <img loading="lazy" src="https://www.3benefits.jp/wp/wp-content/themes/3benefits2024/assets/img/common/footer_logo.png" alt="スリーベネフィッツ株式会社 ロゴ">
+          </picture>
+          <p class="footer_company_name">スリーベネフィッツ 株式会社</p>
+          <p class="footer_company_address">
+            〒105-0014<br>
+            東京都港区芝3-22-7<br>
+            芝NKビル3階
+          </p>
+          <p>TEL: <a href="tel:0364536905">03-6453-6905</a>　FAX: 03-6453-6906</p>
+        </div>
+      </address>
+      <nav class="footer_nav" aria-label="フッターナビゲーション">
+        <div class="footer_nav_1">
+          <ul>
+            <li class="ttl"><a href="https://www.3benefits.jp/" target="_blank" rel="noopener">TOP</a></li>
+          </ul>
+          <ul>
+            <li class="ttl">省エネ・コスト削減</li>
+            <li><a href="https://www.3benefits.jp/esco/" target="_blank" rel="noopener">ESCOサービス</a></li>
+            <li><a href="https://www.3benefits.jp/led-construction/" target="_blank" rel="noopener">LED工事</a></li>
+            <li><a href="https://www.3benefits.jp/air-conditioner-construction/" target="_blank" rel="noopener">空調工事</a></li>
+            <li><a href="https://www.3benefits.jp/tems/" target="_blank" rel="noopener">熱源機省エネ装置TEMS</a></li>
+            <li><a href="https://www.3benefits.jp/cubicle-construction/" target="_blank" rel="noopener">受電設備（キュービクル）工事</a></li>
+            <li><a href="https://www.3benefits.jp/evcharge/" target="_blank" rel="noopener">EV充電スタンド</a></li>
+          </ul>
+        </div>
+        <div class="footer_nav_2">
+          <ul>
+            <li class="ttl">太陽光発電</li>
+            <li><a href="https://www.3benefits.jp/solar/" target="_blank" rel="noopener">太陽光発電<br>（低圧・高圧・自家消費型・蓄電池併用）</a></li>
+          </ul>
+          <ul>
+            <li class="ttl">衛生管理・防災商材</li>
+            <li><a href="https://www.3benefits.jp/alcure/" target="_blank" rel="noopener">光触媒空気清浄機ALCURE</a></li>
+            <li><a href="https://www.3benefits.jp/space/" target="_blank" rel="noopener">除菌剤 ウイルオフ（1P完結）</a></li>
+            <li><a href="https://www.3benefits.jp/underwater/" target="_blank" rel="noopener">水中除菌クリアンス</a></li>
+            <li><a href="https://www.3benefits.jp/facerecognition/" target="_blank" rel="noopener">AIサーマルカメラ</a></li>
+            <li><a href="https://www.3benefits.jp/epb/" target="_blank" rel="noopener">防災タワーEPB</a></li>
+          </ul>
+        </div>
+        <div class="footer_nav_3">
+          <ul>
+            <li class="ttl">補助金申請サポート</li>
+            <li><a href="https://www.3benefits.jp/subsidy/" target="_blank" rel="noopener">省エネ補助金申請サポート</a></li>
+            <li><a href="https://www.3benefits.jp/subsidy-list1/" target="_blank" rel="noopener">省エネ補助金一覧（国）</a></li>
+            <li><a href="https://www.3benefits.jp/subsidy-list2/" target="_blank" rel="noopener">省エネ補助金一覧（自治体）</a></li>
+            <li><a href="https://www.3benefits.jp/subsidy-solar/" target="_blank" rel="noopener">太陽光発電補助金情報</a></li>
+            <li><a href="https://www.3benefits.jp/subsidy-air-conditioner/" target="_blank" rel="noopener">空調補助金情報</a></li>
+          </ul>
+          <ul>
+            <li class="ttl"><a href="https://www.3benefits.jp/blog/" target="_blank" rel="noopener">ナレッジ</a></li>
+            <li class="ttl"><a href="https://www.3benefits.jp/about/" target="_blank" rel="noopener">会社情報</a></li>
+            <li class="ttl"><a href="https://www.3benefits.jp/inquiry/" target="_blank" rel="noopener">お問い合わせ</a></li>
+            <li class="ttl"><a href="https://www.3benefits.jp/privacypolicy/" target="_blank" rel="noopener">個人情報保護方針</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="copyright">
+      <small>Copyright © Three Benefits All Rights Reserved.</small>
     </div>
   </footer>
 
